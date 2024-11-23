@@ -15,3 +15,7 @@ Currently, two official plugins are available:
 2-About
 3-Portfoio
 4-Contact => Formik => Controlled Input
+
+---
+
+Colors => Prime =>#2C3E50
