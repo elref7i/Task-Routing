@@ -3,6 +3,6 @@
 @tailwind utilities;
 @layer components {
   .line {
-    @apply bg-white w-20 h-1;
+    @apply w-20 h-1;
   }
 }
