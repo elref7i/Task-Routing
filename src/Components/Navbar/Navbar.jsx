@@ -3,7 +3,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-firstprime fixed z-50 left-0 right-0 py-8 ">
-        <div className="container flex">
+        <div className="container flex px-3">
           <Link to="/home" className="uppercase font-bold text-white">
             Start Framework
           </Link>

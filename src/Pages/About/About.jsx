@@ -2,7 +2,7 @@ export default function About() {
   return (
     <>
       <section className="bg-secondprime text-white h-screen flex items-center justify-center">
-        <div className="container text-center space-y-4">
+        <div className="container text-center space-y-4 ">
           <h2 className="text-5xl font-semibold uppercase">about component</h2>
           <div className="icon-star  flex items-center justify-center gap-3  ">
             <div className="line bg-white"></div>

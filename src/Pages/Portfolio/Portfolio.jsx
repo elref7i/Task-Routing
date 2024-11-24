@@ -4,8 +4,8 @@ import imagThree from '../../assets/port3.png';
 export default function Portfolio() {
   return (
     <>
-      <section className="h-screen pt-[110px]">
-        <div className="container">
+      <section className="min-h-screen pt-[110px] pb-20">
+        <div className="container ">
           <div className="title text-center space-y-3">
             <h2 className="text-5xl font-semibold uppercase text-firstprime">
               about component
@@ -16,11 +16,41 @@ export default function Portfolio() {
               <div className="line bg-firstprime"></div>
             </div>
           </div>
-          <div className="all-card grid grid-cols-12 pt-12">
-            <div className="group card relative col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
+          <div className="all-card grid grid-cols-12 pt-12 gap-4">
+            <div className="card rounded-md overflow-hidden relative group/parent col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
               <img src={imagOne} className="w-full" alt="" />
-              <div className="overlay absolute inset-0 bg-lime-500 flex items-center justify-center opacity-0 group-hover:opacity-100 duration-[.4s] transition-opacity">
-                <i className="fa-solid fa-plus text-7xl"></i>
+              <div className="group/child overlay absolute inset-0 bg-secondprime flex items-center justify-center opacity-0 group-hover/parent:opacity-75 duration-[.4s] transition-opacity">
+                <i className="fa-solid fa-plus text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[1.5s] transition-opacity"></i>
+              </div>
+            </div>
+            <div className="card rounded-md overflow-hidden relative group/parent col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
+              <img src={imagTwo} className="w-full" alt="" />
+              <div className="group/child overlay absolute inset-0 bg-secondprime flex items-center justify-center opacity-0 group-hover/parent:opacity-75 duration-[.4s] transition-opacity">
+                <i className="fa-solid fa-plus text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[1.5s] transition-opacity"></i>
+              </div>
+            </div>
+            <div className="card rounded-md overflow-hidden relative group/parent col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
+              <img src={imagThree} className="w-full" alt="" />
+              <div className="group/child overlay absolute inset-0 bg-secondprime flex items-center justify-center opacity-0 group-hover/parent:opacity-75 duration-[.4s] transition-opacity">
+                <i className="fa-solid fa-plus text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[1.5s] transition-opacity"></i>
+              </div>
+            </div>
+            <div className="card rounded-md overflow-hidden relative group/parent col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
+              <img src={imagOne} className="w-full" alt="" />
+              <div className="group/child overlay absolute inset-0 bg-secondprime flex items-center justify-center opacity-0 group-hover/parent:opacity-75 duration-[.4s] transition-opacity">
+                <i className="fa-solid fa-plus text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[1.5s] transition-opacity"></i>
+              </div>
+            </div>
+            <div className="card rounded-md overflow-hidden relative group/parent col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
+              <img src={imagTwo} className="w-full" alt="" />
+              <div className="group/child overlay absolute inset-0 bg-secondprime flex items-center justify-center opacity-0 group-hover/parent:opacity-75 duration-[.4s] transition-opacity">
+                <i className="fa-solid fa-plus text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[1.5s] transition-opacity"></i>
+              </div>
+            </div>
+            <div className="card rounded-md overflow-hidden relative group/parent col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer">
+              <img src={imagThree} className="w-full" alt="" />
+              <div className="group/child overlay absolute inset-0 bg-secondprime flex items-center justify-center opacity-0 group-hover/parent:opacity-75 duration-[.4s] transition-opacity">
+                <i className="fa-solid fa-plus text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[1.5s] transition-opacity"></i>
               </div>
             </div>
           </div>

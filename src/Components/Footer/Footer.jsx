@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="bg-firstprime text-white  relative">
+      <footer className="bg-firstprime text-white relative">
         <div className="container grid grid-cols-12 gap-8 py-[90px]">
           <div className="section-left col-span-12 text-center sm:col-span-6 lg:col-span-4 space-y-2">
             <h3 className="uppercase font-bold text-3xl">Location</h3>
