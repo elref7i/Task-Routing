@@ -47,70 +47,97 @@ export default function Contact() {
           </div>
           <form
             action=""
-            className="w-3/4 mx-auto py-10 space-y-8"
+            className="w-3/4 mx-auto py-20 "
             onSubmit={formik.handleSubmit}
           >
-            <div className="username ">
-              <span
-                className={` text-secondprime block z-20 font-bold px-2 duration-[.6s] transition-opacity transition-transform   ${
-                  formik.values.name
-                    ? 'translate-y-0 opacity-1'
-                    : 'translate-y-20 opacity-0'
-                }`}
-              >
-                User Name:
-              </span>
-
-              <input
-                type="text"
-                placeholder="userName"
-                className="border-b-[1px] rounded-md focus:outline-none border-b-gray-200 px-2 py-3 block w-3/4"
-                name="name"
-                // value={formik.values.name}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-              />
+            <div className="space-y-8 mx-auto w-3/4 *:">
+              <div className="username ">
+                <span
+                  className={`labalinput   ${
+                    formik.values.name
+                      ? 'translate-y-0 opacity-1'
+                      : 'translate-y-15 opacity-0'
+                  }`}
+                >
+                  User Name:
+                </span>
+                <input
+                  type="text"
+                  placeholder="userName"
+                  className="input"
+                  name="name"
+                  value={formik.values.name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+              </div>
+              <div className="userage">
+                <span
+                  className={` text-secondprime block -z-20 font-bold px-2 duration-[.6s] transition-opacity transition-transform   ${
+                    formik.values.age
+                      ? 'translate-y-0 opacity-1'
+                      : 'translate-y-15 opacity-0'
+                  }`}
+                >
+                  User Age:
+                </span>
+                <input
+                  type="number"
+                  placeholder="userAge"
+                  className="input"
+                  name="age"
+                  value={formik.values.age}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+              </div>
+              <div className="email">
+                <span
+                  className={` text-secondprime block -z-20 font-bold px-2 duration-[.6s] transition-opacity transition-transform   ${
+                    formik.values.email
+                      ? 'translate-y-0 opacity-1'
+                      : 'translate-y-15 opacity-0'
+                  }`}
+                >
+                  User Email:
+                </span>
+                <input
+                  type="email"
+                  placeholder="userEmail"
+                  className="input"
+                  name="email"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+              </div>
+              <div className="userPassword">
+                <span
+                  className={` text-secondprime block -z-20 font-bold px-2 duration-[.6s] transition-opacity transition-transform   ${
+                    formik.values.password
+                      ? 'translate-y-0 opacity-1'
+                      : 'translate-y-15 opacity-0'
+                  }`}
+                >
+                  User Password:
+                </span>
+                <input
+                  type="password"
+                  placeholder="userPassword"
+                  className="input"
+                  name="password"
+                  value={formik.values.password}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+              </div>
+              <button className="bg-secondprime py-2 px-2 text-white  rounded-md">
+                send Message
+              </button>
             </div>
-            <div className="userage">
-              <span className="text-secondprime font-medium px-2">
-                User Age:
-              </span>
-              <input
-                type="number"
-                placeholder="userAge"
-                className="border-b-[1px] rounded-md focus:outline-none border-b-gray-200 px-2 py-3 block w-3/4"
-                name="age"
-              />
-            </div>
-            <div className="email">
-              <span className="text-secondprime font-medium px-2">
-                User Email:
-              </span>
-              <input
-                type="email"
-                placeholder="userEmail"
-                className="border-b-[1px] rounded-md focus:outline-none border-b-gray-200 px-2 py-3 block w-3/4"
-                name="email"
-              />
-            </div>
-            <div className="userPassword">
-              <span className="text-secondprime font-medium px-2">
-                User Password:
-              </span>
-              <input
-                type="password"
-                placeholder="userPassword"
-                className="border-b-[1px] rounded-md focus:outline-none border-b-gray-200 px-2 py-3 block w-3/4"
-                name="password"
-              />
-            </div>
-            <button className="bg-secondprime py-2 px-2 text-white  rounded-md">
-              send Message
-            </button>
           </form>
         </div>
       </section>
-      ;
     </>
   );
 }

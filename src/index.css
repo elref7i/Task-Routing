@@ -5,4 +5,13 @@
   .line {
     @apply w-20 h-1;
   }
+  .icon-plus {
+    @apply text-7xl opacity-0 text-white group-hover/child:opacity-100 duration-[.6s] transition-opacity;
+  }
+  .input {
+    @apply border-b-[1px] placeholder:text-firstprime rounded-md focus:outline-none border-b-gray-200 px-2 py-3 block w-full;
+  }
+  .labalinput {
+    @apply text-secondprime block -z-20 font-bold px-2 duration-[.6s] transition-opacity transition-transform;
+  }
 }

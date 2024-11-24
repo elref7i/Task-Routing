@@ -7,7 +7,7 @@ export default function Navbar() {
           <Link to="/home" className="uppercase font-bold text-white">
             Start Framework
           </Link>
-          <ul className="flex ms-auto gap-9 uppercase text-white font-bold">
+          <ul className="hidden md:flex ms-auto gap-9 uppercase text-white font-bold">
             <li>
               <NavLink
                 className={function ({ isActive }) {
