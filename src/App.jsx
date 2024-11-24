@@ -9,12 +9,9 @@ export default function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Home />,
-    },
-    {
-      path: '/',
       element: <Layout />,
       children: [
+        { path: '/', element: <Home /> },
         { path: '/home', element: <Home /> },
         { path: '/about', element: <About /> },
         { path: '/portfolio', element: <Portfolio /> },
